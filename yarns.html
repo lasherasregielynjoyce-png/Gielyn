@@ -13,7 +13,12 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: url("garden.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150vh;
+    margin: 0;
     min-height: 100vh;
     padding: 40px 20px;
 
@@ -30,7 +35,7 @@ body {
 
 .guests-title {
     text-align: center;
-    color: white;
+    color: #6b3f4c;
     font-size: 42px;
     margin-bottom: 50px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -44,12 +49,32 @@ body {
 
 .guest-card {
     position: relative;
-    background: white;
+background: linear-gradient(135deg, #fff2b2 0%, #ffaec9 100%);
     border-radius: 10px;
     padding: 30px 20px;
     min-height: 80px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+
+    animation: floatButton 3s ease-in-out infinite;
+
+    background: linear-gradient(
+        to right,
+        rgba(255, 242, 178, 0.6) 0%,
+        rgba(255, 174, 201, 0.6) 100%
+    );
+}
+
+@keyframes floatButton {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .guest-card:hover {
@@ -190,7 +215,12 @@ body {
 
 body {
     font-family: 'Georgia', serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: url("garden.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150vh;
+    margin: 0;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -317,6 +347,16 @@ body {
     pointer-events: auto;
     transform: scale(1);
     position: relative;
+    width: 600px;
+
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
 }
 
 /* ========== CARD CONTENT ========== */
@@ -386,7 +426,7 @@ body {
 
 .back-btn {
     background: #f0f0f0;
-    color: #764ba2;
+    color: black;
     position: absolute;
     top: 15px;
     left: 15px;
@@ -402,7 +442,7 @@ body {
 
 .close-btn {
     background: transparent;
-    color: #764ba2;
+    color: #E8C86A;
     position: absolute;
     top: 15px;
     right: 15px;
@@ -410,13 +450,13 @@ body {
     width: 40px;
     height: 40px;
     padding: 0;
-    border: 2px solid #764ba2;
+    border: 2px solid #E8C86A;
     border-radius: 50%;
 }
 
 .close-btn:hover {
-    background: #f0f0f0;
-    transform: rotate(90deg);
+    background: #fff2b2;
+    transform: rotate(360deg);
 }
 
 /* ========== GUESTS GRID ========== */
@@ -482,10 +522,15 @@ body {
 }
 
 .detail-item {
-    background: rgba(102, 126, 234, 0.1);
-    padding: 20px;
+background: linear-gradient(
+        to right,
+        rgba(255, 242, 178, 0.6) 0%,
+        rgba(255, 174, 201, 0.6) 100%
+    );
+        padding: 20px;
     border-radius: 10px;
-    text-align: left;
+    text-align: center;
+    box-shadow: #333;
 }
 
 .detail-item h3 {
@@ -656,11 +701,11 @@ body {
     background: rgba(255,255,255,0.2);
     backdrop-filter: blur(8px);
 
-    color: #7b2cbf;
+    color: #E8C86A;
     font-size:30px;
     font-weight: bold;
 
-    border: 2px solid #c77dff;
+    border: 2px solid #E8C86A;
 
     transition: all 0.4s ease;
 }
@@ -689,16 +734,23 @@ body {
     </style>
 </head>
 <body>
-    <div class="card active" id="card-main">
-    <a href="eighteenth.html" class="close-btn">↓</a>
+    <div class="card active">
+    <a href="eighteenth.html" class="close-btn" target=_self title="Back to 18s">🌸</a>
     <div class="card-content">
     <div class="guests-container">
         <h1 class="guests-title">18 Yarns</h1>
         
-        <p>Eighteen threads in patient hands,<br>
+          <div class="details-section">
+                    <div class="detail-item">
+                        <p>Eighteen threads in patient hands,<br>
             Weaving dreams in gentle strands.<br>
             Each knot a wish, each loop a care,<br>
             A tapestry of love laid bare.</p>
+                    </div>
+            </div>
+
+        
+<br>
 <br>
         <div class="guests-list">
             <!-- Guest 1 -->
@@ -1513,7 +1565,12 @@ body {
         </div>
     </div>
     <br>
-    <p>Thank you for the 18 yarns—each one feels like a thread of patience, effort, and love woven together just for me. These will be used to create crochet pieces that I will truly cherish, turning every strand into something meaningful and lasting. If I could gently suggest, it would be even better if the yarns were 4–5 ply, since they’re easier to work with and produce more defined, beautiful stitches for the projects I have in mind.</p>
+    <div class="details-section">
+                    <div class="detail-item">
+                        <p>Thank you for the 18 yarns—each one feels like a thread of patience, effort, and love woven together just for me. These will be used to create crochet pieces that I will truly cherish, turning every strand into something meaningful and lasting. If I could gently suggest, it would be even better if the yarns were 4–5 ply, since they’re easier to work with and produce more defined, beautiful stitches for the projects I have in mind.</p>
+                    </div>
+            </div>
+    
     </div>
     
     </div>
