@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're Invited! - 18th Birthday Celebration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Envelope Container -->
+    <div class="envelope-container" id="envelopeContainer">
+        <div class="envelope" id="envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-body"></div>
+        </div>
+        
+        <p class="click-text">Click the envelope to reveal your invitation</p>
+    </div>
+
+    <!-- Cards Container (Hidden initially) -->
+    <div class="cards-container" id="cardsContainer">
+        
+        <!-- Main Invitation Card -->
+        <div class="card active" id="card-main">
+            <button class="close-btn" onclick="closeInvitation()">✕</button>
+            <div class="card-content">
+                <h1 class="card-title">You're Invited!</h1>
+                <p class="card-message">to celebrate the 18th birthday of</p>
+                <h2 class="birthday-name">Regielyn Joyce</h2>
+                <p class="card-subtext">Join us for an unforgettable celebration!</p>
+                <div class="card-buttons">
+                    <!-- 18 Yarns (separate file, styled to match the other buttons) -->
+                    <a href="eighteenth.html" class="menu-btn page-link">👥 Meet the Guests</a>
+
+<style>
+/* Same style as Meet the Guests / About the Debutant / Event Details */
+.menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 25%;
+  max-width: 800px;
+  margin: 5px auto;
+  padding: 13px 20px;
+  
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  
+  transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+</style>
+                    <button class="nav-btn" onclick="showCard('card-about')">🎂 About the Debutant</button>
+                    <button class="nav-btn" onclick="showCard('card-details')">📋 Event Details</button>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- About Birthday Person Card -->
+        <div class="card" id="card-about">
+            <button class="close-btn" onclick="closeInvitation()">✕</button>
+            <button class="back-btn" onclick="showCard('card-main')">← Back</button>
+            <div class="card-content">
+                <h2 class="card-title">About the Debutant</h2>
+                <div class="about-section">
+                    <p class="about-text">
+                        <strong>Name:</strong> Gielyn 
+                    </p>
+                    <p class="about-text">
+                        <strong>Age:</strong> Turning 18!
+                    </p>
+                    <p class="about-text">
+                        <strong>Bio:</strong> She’s into games, logic, puzzles, literature, music, crafts, and movies—basically if it makes you think or feel something, she’s already interested. She loves the color yellow, and lily of the valley is her soft little favorite, like a secret signature of her personality.
+                    </p>
+                    <p class="about-text">
+                        <strong>Fun Fact:</strong> I’m more of a quiet observer at first, but once I’m comfortable, I can talk about games, books, and random thoughts for hours.
+                    </p>
+                    <p class="about-text">
+                        <strong>Favorite Quote:</strong> “If it doesn’t serve me, it doesn’t concern me.”
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event Details Card -->
+        <div class="card" id="card-details">
+            <button class="close-btn" onclick="closeInvitation()">✕</button>
+            <button class="back-btn" onclick="showCard('card-main')">← Back</button>
+            <div class="card-content">
+                <h2 class="card-title">Event Details</h2>
+                <div class="details-section">
+                    <div class="detail-item">
+                        <h3>📅 Date</h3>
+                        <p>Saturday, June 20, 2026</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>🕐 Time</h3>
+                        <p>12:00 PM</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>📍 Location</h3>
+                        <p>Lasheras Residence<br>Sitio Balagbag, Brgy. Kaylaway, Nasugbu, Batangas</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>👗 Dresscode</h3>
+                            <div class="palette">
+                                <div class="circle red"></div>
+                                <div class="circle orange"></div>
+                                <div class="circle yellow"></div>
+                                <div class="circle green"></div>
+                                <div class="circle blue"></div>
+                                <div class="circle indigo"></div>
+                                <div class="circle violet"></div>
+                            </div>
+                        <p>Own your look — no guidelines, just confidence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
