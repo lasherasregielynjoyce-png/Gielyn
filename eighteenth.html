@@ -22,7 +22,12 @@
       display:flex;
       justify-content:center;
       align-items:center;
-      background: linear-gradient(to right, #6676e7, #7d52b5);
+      background-image: url("garden.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150vh;
+    margin: 0;
       font-family: 'Poppins', sans-serif;
       padding:20px;
     }
@@ -31,7 +36,15 @@
       width:600px;
       max-width:100%;
       min-height:600px;
-      background:#efe9d9;
+      background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+
       border-radius:22px;
       padding:24px 44px 40px;
       position:relative;
@@ -45,30 +58,13 @@
       align-items:center;
     }
 
-    .back-btn{
-      border:3px solid #7d52b5;
-      background:transparent;
-      color:#7d52b5;
-      font-size:18px;
-      font-weight:600;
-      padding:12px 24px;
-      border-radius:16px;
-      cursor:pointer;
-      transition:0.3s;
-    }
-
-    .back-btn:hover{
-      background:#7d52b5;
-      color:white;
-    }
-
     .close-btn{
   width:62px;
   height:62px;
   border-radius:50%;
-  border:3px solid #7d52b5;
+  border:3px solid #E8C86A;
   background:transparent;
-  color:#7d52b5;
+  color: #E8C86A;
 
   /* Smaller X */
   font-size:24px;
@@ -85,8 +81,8 @@
 }
 
 .close-btn:hover{
-  background:#7d52b5;
-  color:white;
+  background:#fff2b2;
+  color:#fff2b2;
   transform: rotate(90deg);
 }
 
@@ -95,7 +91,7 @@
       text-align:center;
       margin-top:-5px;
       font-size:30px;
-      color:#7d52b5;
+      color:#6b3f4c;
       font-family:'Playfair Display', serif;
       text-shadow:0 3px 4px rgba(0,0,0,0.15);
     }
@@ -115,9 +111,9 @@
       border-radius:16px;
       font-size:18px;
       font-weight:600;
-      color:white;
+      color:#6b3f4c;
       cursor:pointer;
-      background:linear-gradient(to right, #6676e7, #7d52b5);
+background: linear-gradient(135deg, #fff2b2 0%, #ffaec9 100%);
       box-shadow:0 10px 20px rgba(0,0,0,0.15);
       transition:0.3s;
 
